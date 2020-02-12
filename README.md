@@ -12,4 +12,6 @@
 
 4. Istället för en index.js skapa en app.vue.
 
-5. Gör om det som finns i index.html och index.js till en eller flera single file components.
+5. Gör om det som finns i index.html och index.js till en single file component.
+
+6. Träna sedan på att dela upp det i fler single file components.
