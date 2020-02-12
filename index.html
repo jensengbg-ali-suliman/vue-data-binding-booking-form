@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Booking form</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<section class="booking" id="form">
+			<h1 class="col-2">Åka Tåg</h1>
+			<aside class="col-2">
+				<h2> {{ destinations.from }}</h2>
+				<h2 class="direction">&RightArrow;</h2>
+				<h2> {{ destinations.to }}</h2>
+			</aside>
+			<label class="col-1 mrgbottom">
+				<input type="radio" name="klass" />
+				2:a klass
+			</label>
+			<label class="col-1 mrgbottom">
+				<input type="radio" name="klass" />
+				1:a klass
+			</label>
+			<label class="col-1" for="tickets">
+				Antal biljetter
+			</label>
+			<label class="col-1" for="title">
+				Title
+			</label>
+			<select name="tickets" class="col-1">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<select name="title" class="col-1">
+				<option value="mr">Mr.</option>
+				<option value="mrs">Mrs.</option>
+				<option value="ms">Ms.</option>
+				<option value="dr">Dr.</option>
+			</select>
+			<label class="col-2" for="name">
+			Namn
+			</label>
+			<input type="text" name="name" class="col-2" />
+			<label class="col-2" for="email">
+			Epost
+			</label>
+			<input type="email" name="email" class="col-2" />
+			<label class="col-2" for="terms">
+				<input type="checkbox" name="terms" />
+				Godkänner villkoren
+			</label>
+			<button class="col-2">Boka biljetter!</button>
+        </section>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
